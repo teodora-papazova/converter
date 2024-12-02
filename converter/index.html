@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Конвертор на мерни единици</h2>
+        <form>
+            <input type="text">
+            <br>
+            <label for="from">От:</label>
+            <select class="from" id="to" name="from">
+              <option value="centimeters">cm</option>
+              <option value="meters">m</option>
+              <option value="kilometers">km</option>
+              <option value="inches">inch</option>
+              <option value="feet">feet</option>
+              <option value="yards">yard</option>
+              <option value="miles">mile</option>
+            </select>
+            <br>
+            <label for="to">До:</label>
+            <select class="to" id="to" name="to">
+              <option value="meters">m</option>
+              <option value="centimeters">cm</option>
+              <option value="kilometers">km</option>
+              <option value="inches">inch</option>
+              <option value="feet">feet</option>
+              <option value="yards">yard</option>
+              <option value="miles">mile</option>
+            </select>
+
+            <p id="formula"></p>
+            <button onclick="convert()">Конвертиране</button>
+            <p id="result_text"></p>
+        </form>
+        
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
